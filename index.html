@@ -302,7 +302,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <pre><code>浮动路由</code></pre><p> 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！<br><img src="G:%5CGithub%5CBlog%5Csource%5Cimg%5C1.png" alt=""><br><img src="G:%5CGithub%5CBlog%5Csource%5Cimg%5C2.png" alt=""><br>R2和R3也是如此查看<br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4<br><img src="G:%5CGithub%5CBlog%5Csource%5Cimg%5C3.png" alt=""><br><img src="G:%5CGithub%5CBlog%5Csource%5Cimg%5C4.png" alt=""><br>当配置过静态路由之后，再在R1上查看路由表信息—-图5</p>
+        <pre><code>浮动路由</code></pre><p> 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/1.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/2.png" alt=""><br>R2和R3也是如此查看<br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/3.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/4.png" alt=""><br>当配置过静态路由之后，再在R1上查看路由表信息—-图5</p>
 
       
     </div>
