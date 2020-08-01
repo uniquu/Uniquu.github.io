@@ -15,21 +15,26 @@
 
 
 
-<meta name="description" content="浮动路由 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！R2和R3也是如此查看图2（就是R1）的路由表去往2.2.2.0&#x2F;24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2然后给R1到R3之间配置静态路由—–如图3和图4当配置过静态路由之后，再在R1上查看路由表信息—-图5">
+<meta name="description" content="浮动路由写在前面 保证网络不中断，实现冗余备份！R2和R3也是如此查看图2（就是R1）的路由表去往2.2.2.0&#x2F;24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2然后给R1到R3之间配置静态路由—–如图3和图4 R3也要有相反的路由配置 当配置过静态路由之后，再在R1上查看路由表信息—-图5（图2）之前没有配置过静态路由时2.2.2.0&#x2F;24的下一跳是10.1.1.2 而当">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my_tutu">
+<meta property="og:title" content="biubiu">
 <meta property="og:url" content="http://yoursite.com/2020/07/28/my-tutu/index.html">
 <meta property="og:site_name" content="monday">
-<meta property="og:description" content="浮动路由 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！R2和R3也是如此查看图2（就是R1）的路由表去往2.2.2.0&#x2F;24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2然后给R1到R3之间配置静态路由—–如图3和图4当配置过静态路由之后，再在R1上查看路由表信息—-图5">
-<meta property="og:image" content="https://github.com/uniquu/uniquu.github.io/tree/master/img/1.png">
-<meta property="og:image" content="https://github.com/uniquu/uniquu.github.io/tree/master/img/2.png">
-<meta property="og:image" content="https://github.com/uniquu/uniquu.github.io/tree/master/img/3.png">
-<meta property="og:image" content="https://github.com/uniquu/uniquu.github.io/tree/master/img/4.png">
+<meta property="og:description" content="浮动路由写在前面 保证网络不中断，实现冗余备份！R2和R3也是如此查看图2（就是R1）的路由表去往2.2.2.0&#x2F;24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2然后给R1到R3之间配置静态路由—–如图3和图4 R3也要有相反的路由配置 当配置过静态路由之后，再在R1上查看路由表信息—-图5（图2）之前没有配置过静态路由时2.2.2.0&#x2F;24的下一跳是10.1.1.2 而当">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/1.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/2.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/3.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/5.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/6.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/6.1.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/7.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/8.png">
+<meta property="og:image" content="http://qed2n309w.bkt.clouddn.com/9.png">
 <meta property="article:published_time" content="2020-07-28T09:54:46.000Z">
-<meta property="article:modified_time" content="2020-07-31T13:52:05.755Z">
+<meta property="article:modified_time" content="2020-08-01T02:10:56.214Z">
 <meta property="article:author" content="nougat">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/uniquu/uniquu.github.io/tree/master/img/1.png">
+<meta name="twitter:image" content="http://qed2n309w.bkt.clouddn.com/1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -63,7 +68,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>my_tutu | monday</title>
+<title>biubiu | monday</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -185,7 +190,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" href="/uniquu@163.com" title="Email"></a>
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
@@ -261,7 +266,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="/uniquu@163.com" title="Email"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
@@ -292,7 +297,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      my_tutu
+      biubiu
     </h1>
   
 
@@ -309,7 +314,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <pre><code>浮动路由</code></pre><p> 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/1.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/2.png" alt=""><br>R2和R3也是如此查看<br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/3.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/4.png" alt=""><br>当配置过静态路由之后，再在R1上查看路由表信息—-图5</p>
+        <pre><code>浮动路由</code></pre><p><font size=3>写在前面</font> <font face="微软雅黑">保证网络不中断，实现冗余备份！</font><br><img src="http://qed2n309w.bkt.clouddn.com/1.png" alt=""><br><font size=5><br/>R2和R3也是如此查看<br><br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4</font><br><br/><img src="http://qed2n309w.bkt.clouddn.com/2.png" alt=""><br></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/3.png" alt=""><br><font color=red><font size=5>R3也要有相反的路由配置<br></p>
+<p>当配置过静态路由之后，再在R1上查看路由表信息—-图5</font></font><br><img src="http://qed2n309w.bkt.clouddn.com/5.png" alt=""><br><font size=5>（图2）之前没有配置过静态路由时2.2.2.0/24的下一跳是10.1.1.2 而当我们配置过静态路由后<br>2.2.2.0/24的下一跳变成了192.168.1.2（图5）<br>因为静态路由优先级为60，rip 为100。<br>所以路由表优先存储管理距离小的协议路由条目<br>此时静态和动态之间都能互相ping通。<br><br/>R1ping的R3<br></font><br><img src="http://qed2n309w.bkt.clouddn.com/6.png" alt=""></p>
+<p><font size=5>而当我们把R1的0/0/2端口断开之后，它的路由表就又会变成只有RIP协议时的样子—图6关闭，图7查看R1的路由表</font><br><img src="http://qed2n309w.bkt.clouddn.com/6.1.png" alt=""></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/7.png" alt=""><br><font size=5>此时2.2.2.0/24的下一跳就是10.1.1.2了<br>然后在把R1的0/0/2端口打开—图8</font><br><img src="http://qed2n309w.bkt.clouddn.com/8.png" alt=""></p>
+<p><font size=5>在查看路由表—图9—-此时的路由表又变化了。</font></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/9.png" alt=""></p>
 
       
     </div>
@@ -318,12 +329,12 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2020/07/28/my-tutu/">my_tutu</a></p>
+        <p><span>本文标题:</span><a href="/2020/07/28/my-tutu/">biubiu</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">nougat</a></p>
         <p><span>发布时间:</span>2020-07-28, 17:54:46</p>
-        <p><span>最后更新:</span>2020-07-31, 21:52:05</p>
+        <p><span>最后更新:</span>2020-08-01, 10:10:56</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/07/28/my-tutu/" title="my_tutu">http://yoursite.com/2020/07/28/my-tutu/</a>
+            <span>原始链接:</span><a class="post-url" href="/2020/07/28/my-tutu/" title="biubiu">http://yoursite.com/2020/07/28/my-tutu/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2020/07/28/my-tutu/　　作者: nougat" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -376,7 +387,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"my_tutu　| monday　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"biubiu　| monday　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -406,7 +417,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/07/28/my-tutu/">my_tutu</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/07/28/my-tutu/">biubiu</a></li></ul>
 
 
 

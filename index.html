@@ -183,7 +183,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" href="/uniquu@163.com" title="Email"></a>
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
@@ -259,7 +259,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="/uniquu@163.com" title="Email"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
@@ -292,7 +292,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/28/my-tutu/">my_tutu</a>
+      <a class="article-title" href="/2020/07/28/my-tutu/">biubiu</a>
     </h1>
   
 
@@ -302,7 +302,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <pre><code>浮动路由</code></pre><p> 当动态路由出现问题时，原有的路由会失效，路由器会自动选择静态路由，保证网络不中断，实现冗余备份！<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/1.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/2.png" alt=""><br>R2和R3也是如此查看<br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4<br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/3.png" alt=""><br><img src="https://github.com/uniquu/uniquu.github.io/tree/master/img/4.png" alt=""><br>当配置过静态路由之后，再在R1上查看路由表信息—-图5</p>
+        <pre><code>浮动路由</code></pre><p><font size=3>写在前面</font> <font face="微软雅黑">保证网络不中断，实现冗余备份！</font><br><img src="http://qed2n309w.bkt.clouddn.com/1.png" alt=""><br><font size=5><br/>R2和R3也是如此查看<br><br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4</font><br><br/><img src="http://qed2n309w.bkt.clouddn.com/2.png" alt=""><br></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/3.png" alt=""><br><font color=red><font size=5>R3也要有相反的路由配置<br></p>
+<p>当配置过静态路由之后，再在R1上查看路由表信息—-图5</font></font><br><img src="http://qed2n309w.bkt.clouddn.com/5.png" alt=""><br><font size=5>（图2）之前没有配置过静态路由时2.2.2.0/24的下一跳是10.1.1.2 而当我们配置过静态路由后<br>2.2.2.0/24的下一跳变成了192.168.1.2（图5）<br>因为静态路由优先级为60，rip 为100。<br>所以路由表优先存储管理距离小的协议路由条目<br>此时静态和动态之间都能互相ping通。<br><br/>R1ping的R3<br></font><br><img src="http://qed2n309w.bkt.clouddn.com/6.png" alt=""></p>
+<p><font size=5>而当我们把R1的0/0/2端口断开之后，它的路由表就又会变成只有RIP协议时的样子—图6关闭，图7查看R1的路由表</font><br><img src="http://qed2n309w.bkt.clouddn.com/6.1.png" alt=""></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/7.png" alt=""><br><font size=5>此时2.2.2.0/24的下一跳就是10.1.1.2了<br>然后在把R1的0/0/2端口打开—图8</font><br><img src="http://qed2n309w.bkt.clouddn.com/8.png" alt=""></p>
+<p><font size=5>在查看路由表—图9—-此时的路由表又变化了。</font></p>
+<p><img src="http://qed2n309w.bkt.clouddn.com/9.png" alt=""></p>
 
       
     </div>
@@ -383,6 +389,10 @@
         })
     </script>
 
+
+    
+
+     
 
 
 
