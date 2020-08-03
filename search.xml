@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>biubiu</title>
-    <url>/2020/07/28/my-tutu/</url>
-    <content><![CDATA[<pre><code>浮动路由</code></pre><p><br><font size=6><font face="微软雅黑">保证网络不中断，实现冗余备份！</font><br><br><br><img src="http://qed2n309w.bkt.clouddn.com/1.png" alt=""><br><br><font size=5><br/>R1上查看路由表-图2<br><br>R2和R3也是如此查看<br><br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4</font><br><br/><img src="http://qed2n309w.bkt.clouddn.com/2.png" alt=""><br></p>
-<p><img src="http://qed2n309w.bkt.clouddn.com/3.png" alt=""><br><font color=red><font size=5>R3也要有相反的路由配置<br></p>
-<p>当配置过静态路由之后，再在R1上查看路由表信息—-图5</font></font><br><img src="http://qed2n309w.bkt.clouddn.com/5.png" alt=""><br><font size=5>（图2）之前没有配置过静态路由时2.2.2.0/24的下一跳是10.1.1.2 而当我们配置过静态路由后<br>2.2.2.0/24的下一跳变成了192.168.1.2（图5）<br>因为静态路由优先级为60，rip 为100。<br>所以路由表优先存储管理距离小的协议路由条目<br>此时静态和动态之间都能互相ping通。<br><br/>R1ping的R3<br></font><br><img src="http://qed2n309w.bkt.clouddn.com/6.png" alt=""></p>
-<p><font size=5>而当我们把R1的0/0/2端口断开之后，它的路由表就又会变成只有RIP协议时的样子—图6关闭，图7查看R1的路由表</font><br><img src="http://qed2n309w.bkt.clouddn.com/6.1.png" alt=""></p>
-<p><img src="http://qed2n309w.bkt.clouddn.com/7.png" alt=""><br><font size=5>此时2.2.2.0/24的下一跳就是10.1.1.2了<br>然后在把R1的0/0/2端口打开—图8</font><br><img src="http://qed2n309w.bkt.clouddn.com/8.png" alt=""></p>
-<p><font size=5>在查看路由表—图9—-此时的路由表又变化了。</font></p>
-<p><img src="http://qed2n309w.bkt.clouddn.com/9.png" alt=""></p>
-]]></content>
+    <title>hello</title>
+    <url>/2020/08/03/hello/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
