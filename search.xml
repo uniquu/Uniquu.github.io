@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>STP</title>
+    <url>/2020/08/04/STP/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>biubiu</title>
     <url>/2020/07/28/my-tutu/</url>
     <content><![CDATA[<pre><code>浮动路由</code></pre><p><br><font size=6><font face="微软雅黑">保证网络不中断，实现冗余备份！</font><br><br><br><img src="http://qed2n309w.bkt.clouddn.com/1.png" alt=""><br><br><font size=5><br/>R1上查看路由表-图2<br><br>R2和R3也是如此查看<br><br>图2（就是R1）的路由表去往2.2.2.0/24是通过RIP学到的，它的下一跳（NextHtop）是10.1.1.2<br>然后给R1到R3之间配置静态路由—–如图3和图4</font><br><br/><img src="http://qed2n309w.bkt.clouddn.com/2.png" alt=""><br></p>
