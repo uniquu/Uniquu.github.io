@@ -303,6 +303,151 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/04/STP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nougat">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/%5Bobject%20Object%5D">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="monday">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/08/04/STP/" itemprop="url">STP</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-04T16:24:39+08:00">
+                2020-08-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/route/" itemprop="url" rel="index">
+                    <span itemprop="name">route</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://qed2n309w.bkt.clouddn.com/STP-1.png" alt=""><br><font size=5><font face="楷体">查看了S1S2S3的MAC地址<br></font><br><font size=5><font color=red>[Huawei]display bridge mac-address</font><br><img src="http://qed2n309w.bkt.clouddn.com/STP-2.png" alt=""><br>此时PC1和PC2是能够互通的，因为    S1/S2/S3默认开启了生成树协议<br><img src="http://qed2n309w.bkt.clouddn.com/wire-1.png" alt=""><br>关闭S1/S2/S3的STP后在ping一次<br><br><font color=red>[Huawei]stp disable</font><br><img src="http://qed2n309w.bkt.clouddn.com/STP-3.png" alt=""><br>此时PC1PC2不再互通。产生了环路，产生了大量的ARP广播，<br><img src="http://qed2n309w.bkt.clouddn.com/wire-2.png" alt=""><br>开启stp协议或断开一端口后又会恢复<br><br><font color=red>[Huawei]stp enable</font><br><img src="http://qed2n309w.bkt.clouddn.com/STP-4.png" alt=""><br><font size=10>结束！</font><br><br>补：<br><br>设置S1/S2/S3的STP模式为STP<br><font color=red>[Huawei]stp mode stp</font><br><img src="http://qed2n309w.bkt.clouddn.com/STP-5.png" alt=""><br>生成树协议是通过选择根桥、根端口和指定端口来完成生成树的计算的<br></p>
+<ol>
+<li>根桥通过查看交换机网桥ID确定。查看S1的桥ID<br><img src="http://qed2n309w.bkt.clouddn.com/STP-6.png" alt=""><br>得到S1的桥ID为：CIST Bridge         :32768.4c1f-ccdf-4d59<br>桥ID由两部分组成<br>32768   是交换机的默认优先级，他的取值范围是0<del>65535，步长为4096.数字越小优先级就越高<br>4c1f-ccdf-4d59   是交换机的MAC地址。如果交换机的桥ID相同就比较他们的MAC地址，MAC越小优先级越高。<br>S2和S3也是如此的查看，当得到三台交换机的MAC地址后就可以做比较<br>MAC地址比较方法：<br><br>S1：4c1f-ccdf-4d59<br>S2：4c1f-cc6c-2fc1<br><br>S3：4c1f-cc5a-1de0<br><br>MAC地址的长度是48比特 6个字节 48位二进制，12位16进制数组成<br>16进制：0</del>9  a~f<br>从左往右，越左边越小，此时S1/S2/S3 MAC地址左边6位相同不比较，都一样，比较第7位，d—6—5  得5最小<br>所以根桥就是S3了。<br><img src="http://qed2n309w.bkt.clouddn.com/STP-7.png" alt=""><br>………..</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/28/my-tutu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -466,14 +611,32 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -488,33 +651,7 @@
           
           
 
-          <div id="days"></div>
-<script>
-function show_date_time(){
-window.setTimeout("show_date_time()"， 1000);
-BirthDay=new Date("08/05/2020 21:46:14");
-today=new Date();
-timeold=(today.getTime()-BirthDay.getTime());
-sectimeold=timeold/1000
-secondsold=Math.floor(sectimeold);
-msPerDay=24*60*60*1000
-e_daysold=timeold/msPerDay
-daysold=Math.floor(e_daysold);
-e_hrsold=(e_daysold-daysold)*24;
-hrsold=setzero(Math.floor(e_hrsold));
-e_minsold=(e_hrsold-hrsold)*60;
-minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-seconds=setzero(Math.floor((e_minsold-minsold)*60));
-document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
-}
-function setzero(i){
-if (i<10)
-{i="0" + i};
-return i;
-}
-show_date_time();
-</script>
-
+          
         </div>
       </section>
 
